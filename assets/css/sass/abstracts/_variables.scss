@@ -1,4 +1,3 @@
-// Colors
 $colors: (
     accent: #4aaaa5,
     dark_grey: #666,
@@ -6,4 +5,10 @@ $colors: (
     light_grey: #ccc,
     lighter_grey: #ddd,
     white: #fff,
+);
+
+$breakpoints: (
+    sm: 640px,
+    md: 768px,
+    lg: 980px,
 );

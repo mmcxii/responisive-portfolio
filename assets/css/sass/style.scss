@@ -1,6 +1,7 @@
 // Abstracts
 @import 'abstracts/variables';
 @import 'abstracts/functions';
+@import 'abstracts/mixins';
 
 /* Base */
 @import 'base/reset';
@@ -19,3 +20,7 @@
 @import 'components/profile-image';
 @import 'components/contact-form';
 @import 'components/portfolio';
+
+@import 'media-queries/lg';
+@import 'media-queries/md';
+@import 'media-queries/sm';
