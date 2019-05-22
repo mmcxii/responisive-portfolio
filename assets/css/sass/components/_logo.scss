@@ -4,4 +4,9 @@
     letter-spacing: 0.3rem;
     float: left;
     padding: 0 40px;
+    height: inherit;
+
+    .animate {
+        animation: fade-in 1000ms ease-in-out;
+    }
 }

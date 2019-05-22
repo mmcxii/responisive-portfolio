@@ -1,2 +1,5 @@
 @include mq(breakpoint(lg)) {
+    .container {
+        width: 90%;
+    }
 }

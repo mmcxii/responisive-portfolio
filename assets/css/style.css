@@ -132,6 +132,12 @@ hr {
   letter-spacing: 0.3rem;
   float: left;
   padding: 0 40px;
+  height: inherit;
+}
+
+.logo .animate {
+  -webkit-animation: fade-in 1000ms ease-in-out;
+          animation: fade-in 1000ms ease-in-out;
 }
 
 .profile-image {
@@ -193,7 +199,7 @@ hr {
 
 .portfolio-item-caption {
   position: relative;
-  top: 140px;
+  top: 70%;
   background-color: #4aaaa5;
   padding: 10px 10px;
   width: 100%;
@@ -208,21 +214,82 @@ hr {
 }
 
 .portfolio-item.hangman {
-  background: url(../img/portfolio-thumbnails/hangman.jpg);
+  background: url(../img/portfolio-thumbnails/hangman.jpg) no-repeat;
+  background-size: cover;
 }
 
 .portfolio-item.rpg {
-  background: url(../img/portfolio-thumbnails/rpg.jpg);
+  background: url(../img/portfolio-thumbnails/rpg.jpg) no-repeat;
+  background-size: cover;
 }
 
 .portfolio-item.trivia {
-  background: url(../img/portfolio-thumbnails/trivia.jpg);
+  background: url(../img/portfolio-thumbnails/trivia.jpg) no-repeat;
+  background-size: cover;
 }
 
 .portfolio-item.infowidget {
-  background: url(../img/portfolio-thumbnails/infowidget.jpg);
+  background: url(../img/portfolio-thumbnails/infowidget.jpg) no-repeat;
+  background-size: cover;
 }
 
 .portfolio-item.roshambo {
-  background: url(../img/portfolio-thumbnails/roshambo.jpg);
+  background: url(../img/portfolio-thumbnails/roshambo.jpg) no-repeat;
+  background-size: cover;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  header {
+    position: static;
+    text-align: center;
+    height: 160px;
+  }
+  header .container {
+    width: 100%;
+  }
+  .logo,
+  .navbar {
+    width: 100%;
+  }
+  .navbar {
+    line-height: 60px;
+  }
+  .portfolio-item {
+    width: 100%;
+    height: 300px;
+    margin: 20px auto;
+  }
+  .portfolio-item-caption {
+    top: 75%;
+  }
 }

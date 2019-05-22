@@ -10,7 +10,7 @@
 
         &-caption {
             position: relative;
-            top: 140px;
+            top: 70%;
             background-color: color(accent);
             padding: 10px 10px;
             width: 100%;
@@ -27,7 +27,8 @@
         $thumbs: (hangman, rpg, trivia, infowidget, roshambo);
         @each $thumb in $thumbs {
             &.#{$thumb} {
-                background: url(../img/portfolio-thumbnails/#{$thumb}.jpg);
+                background: url(../img/portfolio-thumbnails/#{$thumb}.jpg) no-repeat;
+                background-size: cover;
             }
         }
     }
