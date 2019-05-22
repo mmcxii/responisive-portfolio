@@ -1,0 +1,35 @@
+.navbar {
+    list-style: none;
+    float: right;
+
+    &-item {
+        display: inline;
+        text-align: center;
+
+        &:not(:last-child) {
+            border-right: color(primary) 1px solid;
+            padding-left: 1px;
+        }
+    }
+
+    &-link {
+        font-size: 18px;
+        text-decoration: none;
+        color: color(primary);
+        padding: 5px 10px;
+
+        &.active {
+            color: color(accent);
+        }
+    }
+
+    &:hover &-link:not(.active) {
+        opacity: 0.5;
+        transition: 200ms;
+
+        &:hover {
+            opacity: 1;
+            transition: 200ms;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+body {
+    background-image: url(../img/bg.png);
+    background-repeat: repeat;
+
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: color(primary);
+    font-size: 16px;
+    line-height: 30px;
+
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 115px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+h2 {
+    color: color(accent);
+}
